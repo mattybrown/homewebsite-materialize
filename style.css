@@ -1,5 +1,11 @@
-.logo{
+.logo2{
   color:#aeea00;
+  font-weight: 600;
+}
+.logo1{
+  font-weight: 100;
+  font-size: .7em;
+
 }
 nav ul a:hover{
   background-color:#424242;
@@ -22,4 +28,7 @@ nav ul a:hover{
 }
 .padding-top-bottom{
   padding:20px 0;
+}
+footer.page-footer{
+  margin-top:0px;
 }

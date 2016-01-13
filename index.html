@@ -10,22 +10,32 @@
     $(document).ready(function(){
       $(".button-collapse").sideNav();
       $(".parallax").parallax();
+      $(".maps").click(function(){
+        $(".maps iframe").css("pointer-events", "auto");
+      });
+      $(".maps").mouseleave(function(){
+        $(".maps iframe").css("pointer-events", "none");
+      });
     });
   </script>
 </head>
 <body>
+<header>
   <nav class="grey darken-4">
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">cafe <span class="logo">home</span></a>
+      <a href="#" class="brand-logo"><span class="logo1">CAFE</span> <span class="logo2">home</span></a>
+
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#"><i class="fa fa-map"></i> Menu</a></li>
+        <li><a href="https://www.facebook.com/Cafehome.blenheim"><i class="fa fa-facebook"></i>  Facebook</a></li>
+        <li><a href="tel:035795040"><i class="fa  fa-phone"></i>  (03) 579 5040</a></li>
+        <li><a href="#contact"><i class="fa fa-map-signs"></i> 1c Main Street, Blenheim</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav grey darken-4" style="left: -250px;">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#"><i class="fa fa-map"></i> Menu</a></li>
+        <li><a href="https://www.facebook.com/Cafehome.blenheim"><i class="fa fa-facebook"></i>  Facebook</a></li>
+        <li><a href="tel:035795040"><i class="fa  fa-phone"></i>  (03) 579 5040</a></li>
+        <li><a href="#contact"><i class="fa fa-map-signs"></i> 1c Main Street, Blenheim</a></li>
       </ul>
       <a class="button-collapse" data-activates="nav-mobile" href="#">
         <i class="fa fa-bars"></i>
@@ -34,18 +44,20 @@
   </nav>
   <div class="parallax-container">
     <div class="container">
-      <h1 class="header center grey-text text-lighten-2 shadow margin-top">Your home away from home</h1>
-      <h4 class="center grey-text text-lighten-2 shadow margin-bottom">Cafe home has amazing coffee, great food and fantastic service, its that simple!</h4>
+      <h1 class="header center grey-text text-lighten-4 shadow margin-top">Your home away from home</h1>
+      <h4 class="center grey-text text-lighten-4 shadow margin-bottom">Cafe home has amazing coffee, great food and fantastic service, its that simple!</h4>
     </div>
-    <div class="parallax"><img src="images/coffee2.jpg" /></div>
+    <div class="parallax"><img src="images/bg_2048.jpg" /></div>
   </div>
+</header>
+<main>
   <div class="grey darken-4">
     <div class="container padding-top-bottom">
       <div class="row">
         <div class="col s12 m6">
           <div class="card grey lighten-2">
             <div class="card-image">
-              <img src="images/food.jpg" />
+              <img src="images/food-small.jpg" />
               <span class="card-title shadow">Food made fresh</span>
             </div>
             <div class="card-content grey-text text-darken-4">
@@ -59,19 +71,50 @@
         <div class="col s12 m6">
           <div class="card grey lighten-2">
               <div class="card-image">
-                <img src="images/cafehome.jpg" />
+                <img src="images/cafehome-small.jpg" />
                 <span class="card-title shadow">Come and enjoy our fantastic atmosphere</span>
               </div>
               <div class="card-content grey-text text-darken-4">
                 <p>We are situated on Main street in Blenheim opposite the post office, parking available in carpark down first lane  behind Cafe home.</p>
               </div>
               <div class="card-action">
-                <a class="waves-effect btn lime accent-4 grey-text text-darken-4" href="#">Contact us</a>
+                <a class="waves-effect btn lime accent-4 grey-text text-darken-4" href="#contact">Contact us</a>
               </div>
             </div>
           </div>
       </div>
     </div>
   </div>
+  <div id="contact" class="embed-container maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.565808834149!2d173.95513615159894!3d-41.51368306228574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d391499eabe16c1%3A0xbc3494c68462e0f8!2sCafe+Home!5e0!3m2!1sen!2snz!4v1452716256974" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
+    <div class="container">
+      <div class="divider"></div>
+      <h5>Contact</h5>
+        <div class="section">
+        <div class="row">
+          <div class="col s6 m4 l3">
+            <a href="tel:035795040"><i class="fa  fa-phone"></i> (03) 579 5040</a>
+          </div>
+          <div class="col s6 m4 l3">
+            <a href="mailto:cafehome@xtra.co.nz"><i class="fa fa-envelope"></i> cafehome@xtra.co.nz</a>
+          </div>
+          <div class="col s6 m4 l3">
+            <a href="#"><i class="fa fa-map-signs"></i> 1c Main Street, Blenheim</a>
+          </div>
+          <div class="col s6 m4 l3">
+            <a href="https://www.facebook.com/Cafehome.blenheim"><i class="fa fa-facebook"></i>  Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer class="page-footer grey darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+        &copy 2016 Home Cafe
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
