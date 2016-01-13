@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $(".parallax").parallax();
+      $(".maps").click(function(){
+        $(".maps iframe").css("pointer-events", "auto");
+      });
+      $(".maps").mouseleave(function(){
+        $(".maps iframe").css("pointer-events", "none");
+      });
+    });
+  </script>
+</head>
+<body>
+<header>
+  <nav class="grey darken-4">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"><span class="logo1">CAFE</span> <span class="logo2">home</span></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="active"><i class="fa fa-map"></i> Menu</a></li>
+        <li><a href="https://www.facebook.com/Cafehome.blenheim"><i class="fa fa-facebook"></i>  Facebook</a></li>
+        <li><a href="tel:035795040"><i class="fa  fa-phone"></i>  (03) 579 5040</a></li>
+        <li><a href="index.html#contact"><i class="fa fa-map-signs"></i> 1c Main Street, Blenheim</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav grey darken-4" style="left: -250px;">
+        <li><a href="#" class="active"><i class="fa fa-map"></i> Menu</a></li>
+        <li><a href="https://www.facebook.com/Cafehome.blenheim"><i class="fa fa-facebook"></i>  Facebook</a></li>
+        <li><a href="tel:035795040"><i class="fa  fa-phone"></i>  (03) 579 5040</a></li>
+        <li><a href="index.html#contact"><i class="fa fa-map-signs"></i> 1c Main Street, Blenheim</a></li>
+      </ul>
+      <a class="button-collapse" data-activates="nav-mobile" href="#">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <div class="parallax-container">
+    <div class="container">
+      <h1 class="header center grey-text text-lighten-4 shadow margin-top">Breakfast</h1>
+      <h4 class="center grey-text text-lighten-4 shadow margin-bottom">Breakfast served until 11am weekdays and all day weekends</h4>
+    </div>
+    <div class="parallax"><img src="images/breakfast.jpg" /></div>
+  </div>
+</header>
+<main>
+  <div class="container">
+
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Cafe home full breakfast *</h5>
+        <p>free range eggs, bacon, grilled tomato, hash brown, tomato relish and toast</p>
+        <p><strong>17.5</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Bacon buttie</h5>
+        <p>bacon on buttered bread or toast, tomato relish or hollandaise optional</p>
+        <p><strong>10</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Vegetarian breakfast *</h5>
+        <p>free range eggs, grilled tomato, hash brown, hollandaise and toast</p>
+        <p><strong>16</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Toasted bagel with cream cheese</h5>
+        <p>with either basil pesto, raspberry or apricot jam.</p>
+        <p><strong>8</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Eggs hollandaise *</h5>
+        <p>free range eggs, toast, bacon and hollandaise sauce</p>
+        <p><strong>15</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Cafe home fresh banana smoothie *</h5>
+        <p>an icy fresh banana smoothie - blended. Have here or takeaway</p>
+        <p><strong>7</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Hot cakes and banana</h5>
+        <p>with cinnamon butter and maple syrup</p>
+        <p><strong>13</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Buttered toast with jam *</h5>
+        <p>your choice of honey, raspberry or apricot jam</p>
+        <p><strong>7</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Hot cakes and whipped cream</h5>
+        <p>with rhubarb and red berry compote</p>
+        <p><strong>13</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Fruit bowl *</h5>
+        <p>fresh seasonal fruit topped with yoghurt, rhubarb and red berry compote</p>
+        <p><strong>13</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Home made cranberry and orange muesli</h5>
+        <p>served with yoghurt and milk or orange juice</p>
+        <p><strong>10</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Extras</h5>
+        <p>toast, bacon, eggs, tomato (grilled or fresh), banana (grilled or fresh), mushrooms, gluten free toast</p>
+        <p><strong>3 each</strong></p>
+      </div>
+    </div>
+
+  </div>
+  <div class="parallax-container">
+    <div class="container">
+      <h1 class="header center grey-text text-lighten-4 shadow margin-top">Lunch</h1>
+      <h4 class="center grey-text text-lighten-4 shadow margin-bottom">See our cabinet for fresh rolls, sandwiches, slices and more</h4>
+    </div>
+    <div class="parallax"><img src="images/lunch.jpg" /></div>
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <h4>All Day</h4>
+      <div class="divider"></div>
+      <div class="col s12 m6">
+        <h5>Toasted bagel with cream cheese</h5>
+        <p>with basil pesto, raspberry or apricot jam</p>
+        <p><strong>8</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Grilled sandwich</h5>
+        <p>served with greens. choose your own toppings</p>
+        <p><strong>8</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Bagel melt</h5>
+        <p>served toasted with greens. Ask our staff for todays fresh flavour</p>
+        <p><strong>9</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Toasted panini</h5>
+        <p>served toasted with greens. Ask our staff for todays fresh flavour</p>
+        <p><strong>9</strong></p>
+      </div>
+    </div>
+    <h4>Before 2pm</h4>
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Bacon buttie *</h5>
+        <p>bacon on buttered bread or toast, tomato relish or hollandaise optional</p>
+        <p><strong>10</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>BLT open sandwich</h5>
+        <p>bacon, lettuce and tomato on toasted ciabatta with greens topped with garlic aioli dressing</p>
+        <p><strong>15</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <h5>Smoked chicken and crispy noodle salad *</h5>
+        <p>a mixed salad with sliced almonds and your choice of a spiced apricot or sweet chilli dressing</p>
+        <p><strong>15</strong></p>
+      </div>
+      <div class="col s12 m6">
+        <h5>Steak open sandwich *</h5>
+        <p>grilled beef steak, onion marmalade, port wine jelly, fresh tomato and greens on toasted ciabatta</p>
+        <p><strong>17</strong></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4">* Gluten free option available</p>
+          <p class="grey-text text-lighten-4">
+            All food made on site. All eggs used at cafe home are free range and sourced locally. Many of the dishes on our menu are suitable for those with food allergies - especially wheat, gluten and dairy intolerances. While cafe home will make every effort to ensure our food be 100% free of allergens, it cannot be guaranteed as we do not have a dedicated gluten free cooking area. Let your waitperson know and they will discuss your needs with the chef.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy 2016 Home Cafe
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
